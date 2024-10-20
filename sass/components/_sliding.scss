@@ -1,0 +1,29 @@
+.logos-section {
+  overflow: hidden;
+  padding: 5rem;
+
+  @include respond(tab-port) {
+    padding: 0rem;
+  }
+
+  &_wrapper {
+    display: flex;
+    gap: 20rem; 
+    margin-bottom: 1rem;
+    flex-wrap: nowrap; 
+    @include respond(tab-port) {
+      padding: 3rem;
+      align-items: center;
+    }
+  }
+
+  &_containers {
+    flex-shrink: 0; 
+
+    img {
+      width: 290px; 
+      height: 150px;
+      object-fit: contain;
+    }
+  }
+}

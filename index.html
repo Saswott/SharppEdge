@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <title>Sharp Egde Business Solutions</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  </head>
+
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="index.html" class="navigation__link"
+              ><span></span>HomePage</a>
+          </li>
+          <li class="navigation__item">
+            <a href="aboutus.html" class="navigation__link"><span></span>About Us</a>
+          </li>
+          <li class="navigation__item">
+            <a href="ourservice.html" class="navigation__link"
+              ><span></span>Service</a >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span></span> Blogs</a>
+          </li>
+          <li class="navigation__item">
+            <a href="contactus.html" class="navigation__link"
+              ><span></span>Contact Us </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <header class="header">
+      <div class="header__logo-box">
+        <img src="img/Sharp_logo.png" alt="Logo" class="header__logo" />
+      </div>
+
+      <div class="header__text-box">
+        <h1 class="heading-primary heading-primary--main">
+          Empowering Your Business with Integrity and Insight.
+        </h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">About Us</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <p class="paragraph">
+              Sharp Egde Business Solutions is a firm that provides clients with
+              a wide range of services in auditing assurance, taxation,
+              regulatory matters, and advisory services. The firm's team
+              consists of dedicated and knowledgeable professionals, such as
+              Chartered Accountants, Attorneys, and Consultants, offering a
+              complete set of company services. Their commitment is to deliver
+              valuable, trustworthy, and efficient services rooted in their
+              expertise and experience in audit, taxation, regulatory
+              compliance, and related business services.
+            </p>
+
+            <a href="aboutus.html" class="btn-text">Learn more &rarr;</a>
+          </div>
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img
+                src="img/revenue.svg"
+                alt="Photo 1"
+                class="composition__photo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-features">
+        <div class="row">
+          <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">Our Services</h2>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <img src="img/calculator.svg" alt="calculator" />
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Audit and Assurance
+              </h3>
+              <p class="feature-box__text">
+                Our team combines the right skills and expertise to provide
+                audit and assurance services. We aim to make the process
+                seamless, ensuring our clients maximize the benefits.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <img src="img/judge.svg" alt="calculator" />
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Corporate Law
+              </h3>
+              <p class="feature-box__text">
+                Our firm boasts a dedicated and highly experienced team
+                specializing in Corporate Law Compliances.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <img src="img/vault.svg" alt="calculator" />
+              <h3 class="heading-tertiary u-margin-bottom-small">Taxation</h3>
+              <p class="feature-box__text">
+                Our firm provides extensive tax services designed to keep
+                clients up-to-date with evolving tax laws and offer expert
+                advice on effective tax planning strategies.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <img src="img/business.svg" alt="calculator" />
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Business Consultings
+              </h3>
+              <p class="feature-box__text">
+                We offer a range of financial services,Accounting and
+                Bookkeeping Services,Payroll Processing Services,Management
+                Reporting,Advance Ruling Services and more.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tours" id="section-tours">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Our Core Team</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">
+                  <figure class="card__shape">
+                    <img
+                      src="img/133771   Subrat.jpg"
+                      alt="Person on a tour"
+                      class="card__img"
+                    />
+                  </figure>
+                </div>
+
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1"
+                    >CA. Subrat Sapkota</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <p class="paragraph">
+                    CA Subrat Sapkota serves as the managing partner of the
+                    Firm, boasting over 10 years of experience in auditing and
+                    consulting assignments across various sectors such as
+                    Manufacturing, Trading, Telecommunications, Insurance,
+                    Banking, Hospitality, Investment & Non-profit organizations.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">
+                  <figure class="card__shape">
+                    <img
+                      src="img/133773    Diwash.jpg"
+                      alt="Person on a tour"
+                      class="card__img"
+                    />
+                  </figure>
+                </div>
+
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1"
+                    >CA. Diwash Dahal</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <p class="paragraph">
+                    CA Diwash Dahal holds the position of executive partner in
+                    the Firm. Mr. Dahal boasts extensive experience in managing
+                    projects across various sectors such as Telecom, Trading,
+                    Import & Export, Tobacco Industry, Oil and Gas,
+                    Manufacturing, Hydro Power, Distribution, IT, and Service
+                    organizations.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">
+                  <figure class="card__shape">
+                    <img
+                      src="img/CAthird.png"
+                      alt="Person on a tour"
+                      class="card__img"
+                    />
+                  </figure>
+                </div>
+
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1"
+                    >CA. Nar Bahadur Budhayair</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <p class="paragraph">
+                    CA Nar Bahadur Budhayair serves as the quality control
+                    reviewer at the Firm. With extensive experience in
+                    overseeing assignments for Insurance, Manufacturing, Hydro,
+                    and Financial Service sector organizations, Mr. Budhayair,
+                    the QCM of the firm, also holds a position as an Audit
+                    faculty in an Institute in Nepal.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="u-center-text u-margin-top-huge">
+          <a href="#" class="btn btn--green">Learn More</a>
+        </div>
+      </section>
+
+      <section class="logos-section">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Our Affiliated Partners</h2>
+        </div>
+        <div class="logos-section_wrapper">
+          <div class="logos-section_containers">
+            <img src="img/partners/1.png" alt="Partner 1" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/2.png" alt="Partner 2" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/3.png" alt="Partner 3" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/4.png" alt="Partner 4" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/5.png" alt="Partner 5" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/6.png" alt="Partner 6" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/7.png" alt="Partner 7" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/8.png" alt="Partner 8" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/9.png" alt="Partner 9" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/10.png" alt="Partner 10" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/11.png" alt="Partner 11" />
+          </div>
+        </div>
+        <div class="logos-section_wrapper">
+          <div class="logos-section_containers">
+            <img src="img/partners/12.png" alt="Partner 12" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/13.png" alt="Partner 13" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/14.png" alt="Partner 14" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/15.png" alt="Partner 15" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/16.png" alt="Partner 16" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/17.png" alt="Partner 17" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/18.png" alt="Partner 18" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/19.png" alt="Partner 19" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/20.png" alt="Partner 20" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/21.jpg" alt="Partner 21" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/22.png" alt="Partner 22" />
+          </div>
+        </div>
+        <div class="logos-section_wrapper">
+          <div class="logos-section_containers">
+            <img src="img/partners/23.png" alt="Partner 23" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/24.png" alt="Partner 24" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/25.png" alt="Partner 25" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/26.png" alt="Partner 26" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/27.png" alt="Partner 27" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/28.png" alt="Partner 28" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/29.png" alt="Partner 29" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/30.png" alt="Partner 30" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/31.png" alt="Partner 31" />
+          </div>
+          <div class="logos-section_containers">
+            <img src="img/partners/32.png" alt="Partner 32" />
+          </div>
+        </div>
+      </section>
+      <section class="section-stories">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="img/video.mp4" type="video/mp4" />
+            <source src="img/video.webm" type="video/webm" />
+            Your browser is not supported!
+          </video>
+        </div>
+
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Our Blogs</h2>
+        </div>
+
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                src="img/nat-8.jpg"
+                alt="Person on a tour"
+                class="story__img"
+              />
+              <figcaption class="story__caption">Mary Smith</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Its the best accounting firm that I have encountered
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam, ipsum sapiente aspernatur libero repellat quis
+                consequatur ducimus quam nisi exercitationem omnis earum qui.
+                Aperiam, ipsum sapiente aspernatur libero repellat quis
+                consequatur ducimus quam nisi exercitationem omnis earum qui.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                src="img/nat-9.jpg"
+                alt="Person on a tour"
+                class="story__img"
+              />
+              <figcaption class="story__caption">Jack Wilson</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                WOW! My life is completely different now
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam, ipsum sapiente aspernatur libero repellat quis
+                consequatur ducimus quam nisi exercitationem omnis earum qui.
+                Aperiam, ipsum sapiente aspernatur libero repellat quis
+                consequatur ducimus quam nisi exercitationem omnis earum qui.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="u-center-text u-margin-top-huge">
+          <a href="#" class="btn-text">Read all Blogs &rarr;</a>
+        </div>
+      </section>
+
+      <section class="section-book">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary">Get in Touch</h2>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Full name"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form__label">Full name</label>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Email address"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="form__label">Email address</label>
+                </div>
+
+                <div class="form__group u-margin-bottom-medium">
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="small"
+                      name="size"
+                    />
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Small tour group
+                    </label>
+                  </div>
+
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="large"
+                      name="size"
+                    />
+                    <label for="large" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Large tour group
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <button class="btn btn--green">Next step &rarr;</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <picture class="footer__logo">
+          <img src="img/Sharp_logo.png" />
+        </picture>
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Carrers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built by <a href="#" class="footer__link">Durbean Services </a>
+            <a href="#" class="footer__link"></a>&copy; Sharp Egde Business
+            Solutions
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All right Reserve
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/main.js"></script>
+</html>

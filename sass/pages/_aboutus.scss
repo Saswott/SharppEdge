@@ -1,0 +1,244 @@
+$color-primary-light: #d3d3d3;
+$color-primary-dark: #929292;
+$color-text-dark: #333;
+$color-background-light: #f4f4f9;
+$image-border-color: #929292;
+$image-border-style: dashed;
+
+
+
+
+.aboutus-hero {
+  height: 100vh; 
+  width: 100vw; 
+  display: flex;
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/team.jpeg); 
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(30% 0%, 100% 1%, 100% 30%, 100% 63%, 48% 100%, 48% 100%, 0 63%, 0 0);
+  text-align: center;
+  position: relative;
+  padding: 3rem 0 0 0;
+}
+
+.aboutus-hero h1 {
+  font-size: 4rem;
+  color: $color-primary-dark;
+  margin: 0;
+  text-align: center;
+  padding-top: 1rem; 
+}
+
+
+.services-section {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 5rem;
+  border-radius: 10px;
+
+  h1 {
+    font-size: 4rem;
+    color: $color-primary-dark;
+    margin-bottom: 2rem;
+  }
+
+  .services-info {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-size: 6.1rem;
+      color: #ffffff;
+      margin-bottom: 28.5rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+      line-height: 2;
+      margin-bottom: 2rem;
+      color: $color-text-dark;
+    }
+  }
+}
+
+.custom-logo-section {
+  position: absolute;
+  left: 15rem;
+  top: 1rem;
+
+  img {
+    height: 60px;
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+
+.aboutus-content {
+  padding: 4rem 2rem;
+
+  .aboutus-info {
+    max-width: 900px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 2.8rem;
+      color: $color-primary-dark;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.image-left-text-right-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 2rem;
+  margin-bottom: 3rem;
+
+  .image-left-text-right-content {
+    flex: 2;
+    max-width: 50%;
+    text-align: left;
+    margin-left: auto;
+
+    p {
+      font-size: 1.6rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .image-left-text-right-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 3rem;
+    margin-left: 2rem;
+
+    img {
+      object-fit: contain;
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      border: none;
+    }
+  }
+}
+
+.section-tours {
+  padding: 6rem 0;
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: $color-primary-dark;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.footer {
+  background-color: $color-grey-dark-3;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  color: $color-grey-light-1;
+
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
+
+  &__logo-box {
+    text-align: center;
+    margin-bottom: 8rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__logo {
+    width: 10rem;
+    height: auto;
+    & img {
+      width: 17rem;
+      height: auto;
+    }
+  }
+
+  &__navigation {
+    border-top: 1px solid $color-grey-dark;
+    padding-top: 2rem;
+    display: inline-block;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-grey-light-1;
+      background-color: $color-grey-dark-3;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+    }
+  }
+
+  &__copyright {
+    border-top: 1px solid $color-grey-dark;
+    padding-top: 2rem;
+    width: 80%;
+    float: right;
+
+    @include respond(tab-port) {
+      width: 100%;
+      float: none;
+    }
+  }
+}
