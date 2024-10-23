@@ -456,7 +456,7 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
-  height: 35rem;
+  height: 41rem;
 }
 @media only screen and (max-width: 56.25em) {
   .feature-box {
@@ -1395,7 +1395,7 @@ header__text-box {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-image: linear-gradient(to right bottom, rgba(71, 77, 94, 0.8), rgba(250, 0, 0, 0)), url("../img/conta.jpg");
+  background-image: linear-gradient(to right bottom, rgba(60, 206, 72, 0.699), rgb(53, 79, 114)), url("../img/cont.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1421,7 +1421,7 @@ header__text-box {
   padding: 40px;
   background-color: rgba(196, 14, 14, 0);
   z-index: 1;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 .contact-form-box .form-group {
   margin-bottom: 20px;
@@ -1486,7 +1486,7 @@ header__text-box {
 }
 
 .map-container {
-  width: 50%;
+  width: 40%;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0);
   text-align: center;
@@ -1496,8 +1496,8 @@ header__text-box {
   align-items: center;
 }
 .map-container iframe {
-  width: 85%;
-  height: 100%;
+  width: 65%;
+  height: 60%;
   aspect-ratio: 1/1;
   border: none;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -1540,7 +1540,7 @@ header__text-box {
   transition: all 0.2s;
 }
 .footer .footer__navigation .footer__list .footer__item .footer__link:hover {
-  color: #1a63eb;
+  color: #5c81c7;
 }
 .footer .footer__copyright {
   border-top: 1px solid #444;
@@ -1578,13 +1578,10 @@ header__text-box {
 }
 
 .section-features {
-  -webkit-clip-path: polygon(25% 0%, 50% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(25% 0%, 50% 0, 100% 100%, 0% 100%);
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(211, 211, 211, 0.8), rgba(146, 146, 146, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
   background-image: "img\conta.jpg ";
-  transform: skewY(-7deg);
   margin-top: -10rem;
 }
 .section-features > * {
@@ -1592,7 +1589,7 @@ header__text-box {
 }
 @media only screen and (max-width: 56.25em) {
   .section-features {
-    padding: 10rem 0;
+    padding: 14rem 0;
   }
 }
 

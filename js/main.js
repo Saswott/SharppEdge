@@ -23,6 +23,6 @@ logoWrappers.forEach((wrapper) => {
         xPercent: -100,
         repeat: -1,
         ease: "linear",
-        duration: 30, 
+        duration: 10, 
     });
 });
