@@ -30,7 +30,7 @@
   }
   &__img {
     height: 100%;
-    transform: translateX(2rem) translateY(3rem) scale(1.4);
+    transform: translateX(1rem) translateY(3rem) scale(1.4);
     backface-visibility: hidden;
     transition: all 0.5s;
   }
@@ -47,6 +47,9 @@
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    @include respond(phone) {
+      
+    }
 
     &--front {
       background-color: $color-white;

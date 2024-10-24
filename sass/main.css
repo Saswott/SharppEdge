@@ -343,7 +343,7 @@ body {
 }
 .card__img {
   height: 100%;
-  transform: translateX(2rem) translateY(3rem) scale(1.4);
+  transform: translateX(1rem) translateY(3rem) scale(1.4);
   backface-visibility: hidden;
   transition: all 0.5s;
 }
@@ -456,7 +456,7 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
-  height: 41rem;
+  height: 45rem;
 }
 @media only screen and (max-width: 56.25em) {
   .feature-box {
@@ -556,7 +556,7 @@ body {
   width: 1.3rem;
   border-radius: 50%;
   position: absolute;
-  top: 50%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #63666d;
@@ -838,6 +838,8 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto;
+  margin-bottom: 10rem;
+  text-align: center;
 }
 .row:not(:last-child) {
   margin-bottom: 8rem;
@@ -1160,33 +1162,35 @@ header__text-box {
   margin-bottom: 1.5rem;
 }
 
-.image-left-text-right-container {
+.unique-image-text-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-start;
   padding: 2rem;
   margin-bottom: 3rem;
 }
-.image-left-text-right-container .image-left-text-right-content {
+.unique-image-text-container .unique-image-text-content {
   flex: 2;
   max-width: 50%;
-  text-align: left;
+  text-align: center;
   margin-left: auto;
+  margin-right: auto;
 }
-.image-left-text-right-container .image-left-text-right-content p {
+.unique-image-text-container .unique-image-text-content p {
+  text-align: center;
   font-size: 1.6rem;
   line-height: 1.8;
-  margin-bottom: 1.5rem;
+  margin-bottom: 4.5rem;
 }
-.image-left-text-right-container .image-left-text-right-image {
+.unique-image-text-container .unique-image-text-image {
   flex: 1;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  margin-right: 3rem;
+  margin-right: 2rem;
   margin-left: 2rem;
 }
-.image-left-text-right-container .image-left-text-right-image img {
+.unique-image-text-container .unique-image-text-image img {
   -o-object-fit: contain;
      object-fit: contain;
   max-width: 100%;
@@ -1207,7 +1211,7 @@ header__text-box {
   color: #929292;
 }
 
-.row {
+.roow {
   display: flex;
   justify-content: space-between;
   margin-bottom: 4rem;
@@ -1345,7 +1349,7 @@ header__text-box {
 }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-image: linear-gradient(109deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 40%), url(../img/nat-10.jpg);
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
@@ -1353,7 +1357,7 @@ header__text-box {
 @media only screen and (max-width: 75em) {
   .book {
     background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
-    background-size: cover;
+    background-size: auto;
   }
 }
 @media only screen and (max-width: 56.25em) {
@@ -1382,6 +1386,11 @@ header__text-box {
   left: 20px;
   z-index: 15;
   width: 120px;
+}
+@media only screen and (max-width: 37.5em) {
+  .logo {
+    width: 8rem;
+  }
 }
 .logo img {
   width: 170%;
@@ -1549,6 +1558,22 @@ header__text-box {
   float: right;
 }
 
+.aboutus-heroo {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-image: linear-gradient(to right bottom, rgba(211, 211, 211, 0.8), rgba(146, 146, 146, 0.8)), url(../img/ourserv.jpg.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 0 0);
+  text-align: center;
+  position: relative;
+  padding: 3rem 0 0 0;
+}
+
 .topic-secondary {
   text-align: center;
   font-size: 6rem;
@@ -1585,7 +1610,7 @@ header__text-box {
   margin-top: -10rem;
 }
 .section-features > * {
-  transform: skewX(-7deg);
+  transform: skewX(0.3s);
 }
 @media only screen and (max-width: 56.25em) {
   .section-features {
@@ -1599,34 +1624,35 @@ header__text-box {
   }
 }
 
-.image-left-text-right-container {
+.unique-image-text-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-start;
   padding: 2rem;
   margin-bottom: 3rem;
 }
-.image-left-text-right-container .image-left-text-right-content {
-  text-align: center;
+.unique-image-text-container .unique-image-text-content {
   flex: 2;
   max-width: 50%;
-  text-align: left;
-  margin-left: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
-.image-left-text-right-container .image-left-text-right-content p {
+.unique-image-text-container .unique-image-text-content p {
+  text-align: center;
   font-size: 1.6rem;
   line-height: 1.8;
-  margin-bottom: 1.5rem;
+  margin-bottom: 4.5rem;
 }
-.image-left-text-right-container .image-left-text-right-image {
+.unique-image-text-container .unique-image-text-image {
   flex: 1;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  margin-right: 3rem;
+  margin-right: 2rem;
   margin-left: 2rem;
 }
-.image-left-text-right-container .image-left-text-right-image img {
+.unique-image-text-container .unique-image-text-image img {
   -o-object-fit: contain;
      object-fit: contain;
   max-width: 100%;

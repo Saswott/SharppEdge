@@ -1,3 +1,25 @@
+.aboutus-heroo {
+  height: 100vh; 
+  width: 100vw; 
+  display: flex;
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/ourserv.jpg.jpg); 
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(50% 0%, 100% 0, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 0 0);
+
+
+  text-align: center;
+  position: relative;
+  padding: 3rem 0 0 0;
+
+}
 .topic-secondary{
     text-align: center;
     font-size: 6rem;
@@ -46,7 +68,7 @@
   margin-top: -10rem;
 
   & > * {
-      transform: skewX(-7deg);
+      transform: skewX(0.3s);
   }
 
   @include respond(tab-port) {
@@ -64,42 +86,42 @@
 }
 
 
-.image-left-text-right-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding: 2rem;
-    margin-bottom: 3rem;
-  
-    .image-left-text-right-content {
+.unique-image-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  margin-bottom: 3rem;
+
+  .unique-image-text-content {
+    flex: 2;
+    max-width: 50%;
     text-align: center;
-      flex: 2;
-      max-width: 50%;
-      text-align: left;
-      margin-left: 20px;
-  
-      p {
-        font-size: 1.6rem;
-        line-height: 1.8;
-        margin-bottom: 1.5rem;
-      }
-    }
-  
-    .image-left-text-right-image {
-      flex: 1;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      margin-right: 3rem;
-      margin-left: 2rem;
-  
-      img {
-        object-fit: contain;
-        max-width: 100%;
-        height: auto;
-        border-radius: 5px;
-        border: none;
-      }
+    margin-left: auto;
+    margin-right: auto;
+
+    p {
+      text-align: center;
+      font-size: 1.6rem;
+      line-height: 1.8;
+      margin-bottom: 4.5rem;
     }
   }
-  
+
+  .unique-image-text-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
+
+    img {
+      object-fit: contain;
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      border: none;
+    }
+  }
+}

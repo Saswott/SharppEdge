@@ -5,6 +5,9 @@
   left: 20px;
   z-index: 15;
   width: 120px;
+  @include respond(phone) {
+    width:8rem;
+  }
 
   img {
     width: 170%;
