@@ -1659,4 +1659,27 @@ header__text-box {
   height: auto;
   border-radius: 5px;
   border: none;
+}
+
+.feature-boxxx {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.6rem;
+  padding: 3.5rem;
+  text-align: center;
+  margin-bottom: 10rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  height: 45rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .feature-boxxx {
+    padding: 2rem;
+  }
+}
+.feature-boxxx:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+.feature-boxxx img {
+  width: 12rem;
 }/*# sourceMappingURL=main.css.map */
